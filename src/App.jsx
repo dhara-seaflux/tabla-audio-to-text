@@ -3,7 +3,7 @@ import axios from 'axios';
 import './App.css'; // Import CSS file for styling
 
 function App() {
-  const API_KEY = process.env.VITE_OPENAI_KEY
+  const API_KEY = import.meta.env.VITE_API_KEY
   const [transcriptionText, setTranscriptionText] = useState(null);
   const [selectedFile, setSelectedFile] = useState(null);
   const [isLoading, setIsLoading] = useState(false); // State to track loading status
